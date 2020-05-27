@@ -1,0 +1,29 @@
+.w-75{
+    margin-top: 3%;
+}
+#samsung{
+    margin-top: 3% !important;
+}
+.navbar{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+.navbar navbar-expand-lg navbar-light bg-light
+{
+    width: 100%;
+    text-align: center;
+}
+
+.card{
+
+    box-shadow: 10px 10px 5px grey;
+}
+.card-body{
+    background-color: floralwhite;
+}
+body{
+	font-size: 1.3rem;
+    background-color: slategrey;
+}

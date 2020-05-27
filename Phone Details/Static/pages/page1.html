@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./page1.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <a class="navbar-brand" href="../../index.html"><img src="../images/logo.png" width="100" height="100"
+                        class="d-inline-block align-top" alt=""></a>
+            </li>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" data-toggle="modal" data-target="#iphoneModal">iPhone 11 Pro Max</a>
+                    <a class="dropdown-item" data-toggle="modal" data-target="#samsungModal" href="#">Samsung Galaxy Note 10 +</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contactUs.html">Contact Us </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="card-group" style="width: 100%;">
+        <div class="card " style="padding: 10px; align-items: center;">
+            <img src="../images/iphone.jpg" class="card-img-top" alt="..." style="width:120px;">
+            <div class="card-body">
+                <h5 class="card-title">iPhone 11 Pro Max</h5>
+                <p class="card-text"><a data-toggle="modal" data-target="#iphoneModal" class="card-text">Click for
+                        Specification.</a></p>
+                <a href="#" data-toggle="modal" data-target="#ppe" class="btn btn-primary">Click for ppi</a>
+            </div>
+        </div>
+        <div class="card" style="align-items: center">
+            <img src="../images/note10.jpg" class="card-img-top" alt="..." style="width: 120px;">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy Note 10 +</h5>
+                <p class="card-text"> <a data-toggle="modal" data-target="#samsungModal" class="card-text">Click for
+                        Specification.</a></p>
+                <a href="#" data-toggle="modal" data-target="#ppe" class="btn btn-primary">Click for ppi</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="iphoneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">iPhone 11 Pro Max</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>188g, 8.1mm thickness
+                        </li>
+                        <li>iOS 13, up to iOS 13.4
+                        </li>
+                        <li>64GB/256GB/512GB storage, no card slot
+                        </li>
+                        <li>IP68 dust/water resistant (up to 4m for 30 mins)</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="samsungModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Samsung Galaxy Note 10 +</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>168g, 7.9mm thickness
+                        </li>
+                        <li>Android 9.0, up to Android 10, One UI 2.1
+                        </li>
+                        <li>256GB storage, no card slot
+                        </li>
+                        <li>Dynamic AMOLED capacitive touchscreen, 16M colors
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="ppe">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calculate ppi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="width">Width</label>
+                            <input type="number" class="form-control" id="width" placeholder="Width" value="value">
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <input type="number" class="form-control" id="height" placeholder="Height" value="value">
+                        </div>
+                        <div class="form-group">
+                            <label for="diagonal">Diagonal in Inches</label>
+                            <input type="number" class="form-control" id="diagonal" placeholder="Diagonal in Inches" value="value">
+                        </div>
+                        <div class="form-group">
+                            <label for="pixel">ppi</label>
+                            <input disabled type="number" class="form-control" id="pixel" placeholder="PPE" value="0">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="calculatePpe()">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
